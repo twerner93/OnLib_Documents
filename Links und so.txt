@@ -1,0 +1,45 @@
+Datenbank: --> MySQLDatenbank
+Benutzer (Id, Name, Email, Adresse?, Geb?, )
+//Bücher (Id, Autor, Titel, Beschreibung, ..)
+//Filme
+//Alben?
+Medium(Id, Autor, Titel, Beschreibung)
+
+Exemplar(Id, BenutzerId, Buch oder FIlm Id, Auflage, siohf9brg, Typ(DVD, CD, Datei..))
+
+Bewertung (BewertungId, BenutzerId, Buch/FIlmId, Bewertung 0-5, Text)
+
+
+
+
+
+MVC
+de.wikipedia.org/wiki/Model_View_Controller
+http://www.net-developers.de/blog/2009/07/24/mvc-und-php-kurz-und-knackig-erklart/
+
+PHP
+http://www.winfuture-forum.de/index.php?showtopic=197242
+http://net.tutsplus.com/tutorials/other/mvc-for-noobs/
+http://www.html.de/threads/php-mvc-tutorial-auf-basis-eines-gaestebuchs-oop.42159/
+
+PHP + Zend
+http://framework.zend.com/manual/1.12/de/learning.quickstart.intro.html
+
+ASP.NET
+http://msdn.microsoft.com/de-de/library/dd381412%28v=vs.108%29.aspx
+http://help.thaifarang.net/wjk-Software.01_Einfuhrung-in-ASP-net-MVC-4-Startseite.ashx
+http://www.aspnetzone.de/forums/thread/220985.aspx
+http://www.codefest.at/post/2011/03/21/ASPNET-MVC-3-Tutorial-1-e28093-Das-Model-View-Controller-%28MVC%29-Pattern-erklart.aspx
+
+http://www.aspnetzone.de/forums/thread/220986.aspx
+
+Tutorials ASP.NET MVC
+http://www.asp.net/mvc/tutorials/mvc-4/getting-started-with-aspnet-mvc4/intro-to-aspnet-mvc-4
+http://help.thaifarang.net/wjk-Software.01_Einfuhrung-in-ASP-net-MVC-4-Startseite.ashx
+
+
+
+
+
+
+
