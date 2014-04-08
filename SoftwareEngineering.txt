@@ -1,0 +1,11 @@
+Online Bibliothek
+
+Benutzerverwaltung
+Status der Bücher --> mehrere Exemplare pro Buch
+Filme und Musik ausleihen
+
+Daten von Büchern/Filmen/.. automatisch aus anderen Quellen laden
+
+Bewertungen durch Benutzer
+
+

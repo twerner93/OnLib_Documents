@@ -1,0 +1,14 @@
+http://www.codeproject.com/Articles/674760/Code-First-Migration-and-Extending-Identity-Accoun
+
+http://csharppulse.blogspot.in/2013/08/learning-mvc-part-1-introduction-to-mvc.html
+
+http://www.asp.net/mvc/tutorials/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
+
+
+WICHTIG:
+http://www.codeproject.com/Articles/207797/Learn-MVC-Model-View-Controller-step-by-step-in-7
+http://www.codeproject.com/Articles/24579/ASP-NET-MVC-Part-1
+
+
+Security:
+http://www.codeproject.com/Articles/654846/Security-In-ASP-NET-MVC
