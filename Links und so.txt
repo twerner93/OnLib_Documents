@@ -10,8 +10,6 @@ Exemplar(Id, BenutzerId, Buch oder FIlm Id, Auflage, siohf9brg, Typ(DVD, CD, Dat
 Bewertung (BewertungId, BenutzerId, Buch/FIlmId, Bewertung 0-5, Text)
 
 
-adsf
-
 
 MVC
 de.wikipedia.org/wiki/Model_View_Controller
