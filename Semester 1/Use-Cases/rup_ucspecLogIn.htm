@@ -657,7 +657,7 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Basic Flow</a> </h2>
 
-<img src="Diagramme/Use-Cse_Login.png">
+<img src="Diagramme/Use-Case_Login.png">
 
 <!--<p class=InfoBlue>[This use case starts when the actor does something.  An actor always initiates use
 cases.&nbsp; The use case describes what the actor
@@ -775,23 +775,22 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 </span>Narrative(Cucumber)</a></h2>
 <pre>
   <code>
-Feature: Datenbank nach Stichworten durchsuchen
-  So können Titel gezielt gefiltert werden.
+Feature: Benutzer Loggt sich ein
 
-Szenario: Nutzer sucht nach einem Titelnamen
-Gegeben Es sind Datensätze vorhanden
+Szenario: Nutzer loggt sich mit richtigen Daten ein
+Gegeben Nutzer ist vorhanden
 Wenn Benutzer die Abfrage abschickt
-Dann bekommt er eine Liste mit entsprechenden Einträgen
+Dann kann er alle Funktionen dieser Applikation nutzen
 
-Szenario: Nutzer filtert nach Kategorie (Buch, Film, Album,..)
-Gegeben Es sind Datensätze vorhanden
+Szenario: Nutzer gibt falschen Benutzernamen ein
+Gegeben Nutzer ist vorhanden
 Wenn der Benutzer Abfrage abschickt
-Dann bekommt er eine Liste mit allen Büchern, Filmen, Alben,...
+Dann bekommt er eine Fehlermeldung
 
-Szenario: Nutzer sucht nach nicht vorhandenem Titel
-Gegeben Es sind Datensätze vorhanden
+Szenario: Nutzer gibt falsches Passwort ein 
+Gegeben Nutzer ist vorhanden
 Wenn der Benutzer die Abfrage abschickt
-Dann bekommt er eine Nachricht, dass es diesen Titel noch nicht gibt
+Dann bekommt er eine Fehlermeldung
   </code>
 </pre>
 
@@ -805,7 +804,83 @@ Dann bekommt er eine Nachricht, dass es diesen Titel noch nicht gibt
 
 <h1><a name="7.                  FP Kalkulation">7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>FP Kalkulation</a></h1>
-<p>fehlt noch</p>
+<table border="1" bordercolor="#000000" style="background-color:#FFFFFF" width="100%" cellpadding="3" cellspacing="3">
+	<tr>
+		<td colspan = "2"><b><u>Communication</u></b></td>
+	</tr>
+	<tr>
+		<td>Complexity</td>
+		<td>Average(Server + Client)</td>
+	</tr>
+	<tr>
+		<td colspan = "2"><b><u>Files</u></b></td>
+	</tr>
+	<tr>
+		<td><b>ILF1</b></td>
+		<td>ApplicationUser</td>
+	</tr>
+	<tr>
+		<td>DETs</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>Complexity</td>
+		<td>Low (5)</td>
+	</tr>
+	<tr>
+		<td><b>ILF2</b></td>
+		<td>RegisterViewModel</td>
+	</tr>
+	<tr>
+		<td>DETs</td>
+		<td>7</td>
+	</tr>
+	<tr>
+		<td>Complexity</td>
+		<td>Low (7)</td>
+	</tr>
+	<tr>
+		<td colspan ="2"><b><u>External Input (EI)</u></b></td>
+	</tr>	
+	<tr>
+		<td><b>EI1</b></td>
+		<td>Registrieren-Formular</td>
+	</tr>	
+	<tr>
+		<td>File-Type-References</td>
+		<td>1-Identity Model</td>
+	</tr>	
+	<tr>
+		<td>DETs</td>
+		<td>8</td>
+	</tr>
+	<tr>
+		<td>Complexity</td>
+		<td>Low (8)</td>
+	</tr>
+	<tr>
+		<td colspan = "2"><b><u>External Output(EO)</u></b></td>
+	</tr>
+	<tr>
+		<td><b>EO1</b></td>
+		<td>Startseite</td>
+	</tr>	
+	<tr>
+		<td>File-Type-References</td>
+		<td>0</td>
+	</tr>	
+	<tr>
+		<td>DETs</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>Complexity</td>
+		<td>Low (0)</td>
+	</tr>
+</table>
+<p> &rArr; Function Points: 19,68</p>
+<p> &rArr; LOC: 147</p>
+
 </div>
 
 </body>
