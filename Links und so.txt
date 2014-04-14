@@ -9,8 +9,7 @@ Exemplar(Id, BenutzerId, Buch oder FIlm Id, Auflage, siohf9brg, Typ(DVD, CD, Dat
 
 Bewertung (BewertungId, BenutzerId, Buch/FIlmId, Bewertung 0-5, Text)
 
-dfg
-
+dsgg
 MVC
 de.wikipedia.org/wiki/Model_View_Controller
 http://www.net-developers.de/blog/2009/07/24/mvc-und-php-kurz-und-knackig-erklart/
