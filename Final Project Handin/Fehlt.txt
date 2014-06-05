@@ -1,0 +1,9 @@
+Es fehlt:
+
+- Ausleihen, Bearbeiten, InfoQuelle die FP Estimation
+- Demo
+- Test-Logs
+- Architecture Document (refactoring, MVC, class diagramm)
+- DB Schema
+- Risk List (sorted)
+- Deployment in proof of automation
