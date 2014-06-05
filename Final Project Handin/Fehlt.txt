@@ -7,3 +7,5 @@ Es fehlt:
 - DB Schema
 - Risk List (sorted)
 - Deployment in proof of automation
+- Installation Manual
+- Final Presentation
