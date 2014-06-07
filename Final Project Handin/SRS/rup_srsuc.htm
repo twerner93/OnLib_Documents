@@ -1,0 +1,760 @@
+<html>
+
+<head>
+<meta name=Generator content="Microsoft FrontPage 4.0">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name=Originator content="Microsoft Word 9">
+<title>Software Requirements Specification</title>
+<style>
+<!--
+ 
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+h1
+	{
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	text-indent:-.5in;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;}
+h2
+	{
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	text-indent:-.5in;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Arial;}
+h3
+	{
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	text-indent:-.5in;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Arial;
+	font-weight:normal;
+	font-style:italic;}
+h4
+	{
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	text-indent:-.5in;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Arial;
+	font-weight:normal;}
+h5
+	{
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:2.0in;
+	text-indent:0in;
+	line-height:12.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	font-weight:normal;}
+h6
+	{
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:2.0in;
+	text-indent:0in;
+	line-height:12.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:2.0in;
+	text-indent:0in;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:2.0in;
+	text-indent:0in;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:2.0in;
+	text-indent:0in;
+	line-height:12.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{
+	margin-top:12.0pt;
+	margin-right:.5in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{
+	margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.6in;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:40.0pt;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:50.0pt;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:70.0pt;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:80.0pt;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:45.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-45.0pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	border:none;
+	padding:0in;
+	font-size:8.0pt;
+	font-family:HELVETICA;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+span.MsoFootnoteReference
+	{
+	vertical-align:super;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:18.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:blue;
+	font-style:italic;
+	text-decoration:underline;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:18.0pt;
+	font-family:Arial;
+	font-style:italic;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:blue;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;}
+p.Paragraph2, li.Paragraph2, div.Paragraph2
+	{
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.Bullet1, li.Bullet1, div.Bullet1
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.3in;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.Bullet2, li.Bullet2, div.Bullet2
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:navy;}
+p.Tabletext, li.Tabletext, div.Tabletext
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MainTitle, li.MainTitle, div.MainTitle
+	{
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:16.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.Paragraph1, li.Paragraph1, div.Paragraph1
+	{
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.Paragraph3, li.Paragraph3, div.Paragraph3
+	{
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:76.5pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.Paragraph4, li.Paragraph4, div.Paragraph4
+	{
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:112.5pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.Body, li.Body, div.Body
+	{
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Book Antiqua";}
+p.Bullet, li.Bullet, div.Bullet
+	{
+	margin-top:6.0pt;
+	margin-right:.25in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:0in;
+	font-size:10.0pt;
+	font-family:"Book Antiqua";}
+p.InfoBlue, li.InfoBlue, div.InfoBlue
+	{
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:38.25pt;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:blue;
+	font-style:italic;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+<P style="MARGIN: -14px 0px +2px"><FONT face=Arial size=1>
+<img border=0 src="../../../applet/images/artfc_w.gif"> <a href="../../../process/artifact/ovu_arts.htm">Artifacts</a> &gt;
+<img border=0 src="../../../applet/images/artfc_y.gif"> <a href="../../../process/artifact/ars_req.htm">Requirements Artifact Set</a> &gt;
+<img border=0 src="../../../applet/images/additional.gif"> <a href="../../../process/artifact/arp_req_add.htm">{More Requirements Artifacts}</a> &gt;
+<img border=0 src="../../../applet/images/ar_srs.gif"> <a href="../../../process/artifact/ar_srs.htm">Software Requirements Specification</a> &gt;
+<img border=0 src="../../../applet/images/ie.gif">  SRS w/ Use-Cases
+</FONT></P>
+<!---
+<rpw name="PresentationName"> SRS w/ Use-Cases</rpw>
+--->
+<div class=Section1>
+
+<p class=MsoTitle align=right style='text-align:right'>Online-Library</p>
+
+<p class=MsoTitle align=right style='text-align:right'>Software Requirements Specification</p>
+
+<p class=MsoTitle align=right style='text-align:right'>For Prof. Kay Berkling</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoTitle align=right style='text-align:right'><span style='font-size:
+14.0pt;'>Version 1.0</span></p>
+
+<p class=MsoTitle><span style='font-size:14.0pt;'>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'>&nbsp;</p>
+
+<p class=InfoBlue>[Note: The following template is provided for use with the
+Rational Unified Process. Text enclosed
+in square brackets and displayed in blue italics (style=InfoBlue) is included
+to provide guidance to the author and should be deleted before publishing the
+document. A paragraph entered following this style will automatically be set to
+normal (style=Body Text).]</p>
+
+</div>
+
+<i><span style='font-size:10.0pt;font-family:
+"Times New Roman";color:blue;'><br clear=all style='page-break-before:always;'>
+</span></i>
+
+<div class=Section2>
+
+<p class=MsoTitle>Revision History</p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;'>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Date</b></p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Version</b></p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Description</b></p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Author</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>11.10.2013</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>1.0</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>Erste Teilaufgabe</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>Torsten, Wanping</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<b><span style='font-size:18.0pt;font-family:Arial;'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoTitle>Inhaltsverzeichnis</p>
+
+<p class=MsoToc1><a href="#1.                  Einleitung"">1.         
+Einleitung</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.1               Zweck"">1.1      Zweck</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.2               Produktumfang"">1.2      Produktumfang</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.3               Definitionen und Abkürzungen"">1.3      Definitionen und Abkürzungen</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.4               Referenzen"">1.4     
+Referenzen</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.5               Übersicht"">1.5      Übersicht</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#2.                  Allgemeine Übersicht"">2.          Allgemeine
+Übersicht</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#2.1               Use-Case Übersicht"">2.1      Use-Case Übersicht
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#2.2               Annahmen und Anhängigkeiten"">2.2      Annahmen und 
+Abhängigkeiten</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#3.                  Spezifische Anforderungen"">3.          Spezifische
+Anforderungen</a></p>
+
+<p class=MsoToc2><a href="#3.1               Use-Case Beschreibungen"">3.1      Use-Case
+Beschreibungen</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#3.2               Zusätzliche Anforderungen"">3.2      Zusätzliche 
+Anforderungen</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#4.                  Supporting Information"">4.          Supporting
+Information</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoTitle><br
+clear=all style='page-break-before:always'>Software Requirements
+Specification </p>
+
+<h1><a name="1.                  Einleitung">1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Einleitung</a></h1>
+
+<p>Dieses Dokument ist eine Hilfestellung zur Verständnis des Projektes. Dabei wird im ersten Kapitel einen kurzen Überblick über das Dokument verschafft. </p>
+
+
+<h2><a name="1.1               Zweck">1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Zweck</a></h2>
+
+<p>Der Inhalt dieses Dokumentes ist die Spezifikation der Anforderungen an die Web-Anwendung Online-Library.</p>
+<p>Die Spezifikation wird verwendet, um die Anforderungen zu definieren, rück zu verfolgen und zu validieren.</p>
+<p>Dieses Dokument ist insbesondere für Entwickler und Tester gedacht, welche die genannten Abläufe durchführen.</p>
+
+<h2><a name="1.2               Produktumfang">1.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Produktumfang</a></h2>
+
+<p>Diese Anwendung wird eingesetzt, um online Bücher, Filme, Alben sowie eBooks auszuleihen. 
+Ebenfalls kann jeder Nutzer seine Medien, die ausgeliehen werden können, online stellen, welche dann von anderen Nutzern, 
+die diese Seite auch nutzen ausgeliehen werden können.</p>
+<p>Diese Anwendung dient dazu, über eine Weboberfläche die eigenen Medien zu verwalten und anderen Nutzern zum Verleih zur Verfügung zu stellen. 
+Weiterhin kann man selbst auch von anderen Benutzern leihen. 
+Ziel ist es, eine einfache Möglichkeit zu erschaffen, Medien zu leihen und verleihen. </p>
+
+<h2><a name="1.3               Definitionen und Abkürzungen">1.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Definitionen und Abkürzungen</a></h2>
+
+<p>Alle Definitionen und Abkürzungen, die in diesem Dokument erscheinen, sind im Glossar erfasst und erläutert.</p>
+
+<h2><a name="1.4               Referenzen">1.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Referenzen</a></h2>
+
+<p>n.A.</p>
+
+<h2><a name="1.5               Übersicht">1.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Übersicht</a></h2>
+
+<p>Die weitere Gliederung dieses Dokumentes ist wie folgt:</p>
+<p>-	Im Kapitel "Allgemeine Übersicht" werden das Produkt und dessen Umfeld näher erläutert, um mit diesen zusätzlichen Informationen die Anforderungen besser zu verstehen.</p>
+<p>-	Das Kapitel "Spezifische Anforderungen" beinhaltet detaillierte Beschreibung der Anforderungen. Anhand dieser Beschreibung soll es möglich sein das Produkt vollständig zu entwickeln und testen.</p>
+
+<h1><a name="2.                  Allgemeine Übersicht">2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Allgemeine Übersicht</a></h1>
+
+<p>In diesem Kapitel werden Informationen zu dem Produkt und dessen Umfeld gegeben, so dass die Anforderungen besser verstanden und eingeordnet werden können. 
+Es werden noch keine spezifischen Anforderungen gemacht.</p>
+
+<h2><a name="2.1               Use-Case Übersicht">2.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Use-Case Übersicht</a></h2>
+
+<p> Das folgende Use-Case Diagramm soll eine Übersicht über das Produkt geben. Die markierten Use-Cases werden kurz beschrieben.</p>
+
+<p><img src="neu1.jpg" width="600px"/></p>
+<p><b>Daten eingeben:</b> Hat der Benutzer Medien, die noch nicht in der Datenbank vorhanden sind, kann er diese eintragen, sodass andere Benutzer diese finden können.</p>
+<p><b>in allen Daten suchen:</b> Der Benutzer hat die Möglichkeit diue in der Datenbank vorhandenen gezielt nach seinen Wünschen zu durchsuchen. 
+Hierbei hilft ein Formular, die Suche möglichst exakt auszuführen.</p>
+<p><b>Daten bearbeiten:</b> Sind Daten unvollständig oder falsch, hat jeder Benutzer die Möglichkeit sie zu ändern.</p>
+<p><b>Medien ausleihen:</b> Benutzer können Medien von anderen Benutzern ausleihen. Gleichzeitig können sie ihre Medien auch zum Verleih anbieten.</p>
+<p><b>Informationen aus anderen Quellen:</b> Der Benutzer kann Informationen eines Mediums bearbeiten, sofern diese Informationen unvollständig oder falsch sind. 
+Außerdem besteht die Möglichkeit diese Informationen automatisch aus anderen Quellen zu laden.</p>
+
+<h2><a name="2.2               Annahmen und Abhängigkeiten">2.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Annahmen und Abhängigkeiten</a></h2>
+
+<p>Es werden bestimmte Annahmen und Abhängigkeiten zum Zeitpunkt der Erstellung vorausgesetzt.
+Diese Annahmen und Abhängigkeiten können eine Gefahr für die Erfüllung der Ziele sein. 
+Im diesem Falle muss das Ziel durch das Projektmanagement überprüft oder es muss ein Weg zur Veränderung der Randbedingung gefunden werden.</p>
+<p>2.2.1	Marktsituation</p>
+<p>Der Markt bietet viele Bibliotheken sowie Shops online an, bei denen man ausgeliehen, eingekauft und getauscht werden kann. 
+Jedoch ist ein Produkt mit der Funktionalität, der in diesem Projekt geplanten Anwendung, nicht bekannt.
+</p>
+<p>2.2.2	Verzögerungen</p>
+<p>Krankheiten der Mitarbeiter könnten zu einer unerwarteten Verzögerung des Projektes führen.</p>
+
+<h1><a name="3.                  Spezifische Anforderungen">3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Spezifische Anforderungen</a> </h1>
+
+<p>Dieser Abschnitt beschreibt die spezifischen Anforderungen an die Software.</p>
+
+<h2><a name="3.1               Use-Case Beschreibungen">3.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Use-Case Beschreibungen</a></h2>
+
+<p>Die zu implementierenden Use-Cases warden im Folgenden beschrieben.</p>
+<table border="1">
+<tr>
+	<th>Requirement</th><th>Status</th><th>Beschreibung</th>
+<tr>
+</tr>
+	<td>UC1 "Daten eingeben"</td><td>Validated</td><td>Siehe Use-Case-Dokument Abschnitt "Daten eingeben"</td>
+<tr>
+</tr>
+	<td>UC2 "in Daten suchen"</td><td>Validated</td><td>Siehe Use-Case-Dokument Abschnitt "in Daten suchen"</td>
+<tr>
+</tr>
+	<td>UC3 "Daten bearbeiten"</td><td>Validated</td><td>Siehe Use-Case-Dokument Abschnitt "Daten bearbeiten"</td>
+<tr>
+</tr>
+	<td>UC4 "Medien ausleihen"</td><td>Validated</td><td>Siehe Use-Case-Dokument Abschnitt "Medien ausleihen"</td>
+<tr>
+</tr>
+	<td>UC5 "Informationen aus anderen Quellen"</td><td>Validated</td><td>Siehe Use-Case-Dokument Abschnitt "Informationen aus anderen Quellen"</td>
+</tr>
+</table>
+
+<h2><a name="3.2               Zusätzliche Anforderungen">3.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Zusätzliche Anforderungen</a> </h2>
+
+<p>Funktionalität:</p>
+<p>-	Die Anwendung wird auf Deutsch sein.</p>
+<p>-	Für diese Anwendung wird eine Internetverbindung benötigt.</p>
+<p>Portabilität:</p>
+<p>-	Diese Anwendung soll möglichst so erstellt werden, dass kein Hindernis besteht, wenn der Nutzer einen anderen Browser verwenden möchte.</p>
+<p>Leistung: </p>
+<p>-	Diese Anwendung hat als Ziel den Code möglichst effizient zu implementieren und trotzdem soll dieser gut lesbar sein.</p>
+<p>Erscheinungsbild:</p>
+<p>-	Die Oberfläche der Anwendung soll möglichst auf allen Browser gleich aussehen.</p>
+<p>Zeit:</p>
+<p>-	Diese Anwendung soll möglichst vor Ende der Theoriephase des vierten Semesters fertig gestellt werden.</p>
+
+<h1><a name="4.                  Supporting Information">4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Supporting Information</a></h1>
+
+<p>Im folgenden Kapitel sind Glossar sowie Anhang enthalten.</p>
+
+<p>4.1	Glossar</p>
+<p>n.A.</p>
+<p>4.2	Anhang</p>
+<p>n.A.</p>
+
+</div>
+
+</body>
+
+</html>
