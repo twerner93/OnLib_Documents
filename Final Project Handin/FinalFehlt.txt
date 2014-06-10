@@ -1,10 +1,6 @@
 Es fehlt:
 
 - Ausleihen, Bearbeiten, InfoQuelle die FP Estimation --> Torsten
-- Demo
 - Test-Logs --> Torsten
-- Architecture Document (refactoring, MVC, class diagramm)
 - DB Schema --> Torsten
-- Deployment in proof of automation
-- Installation Manual
-- Final Presentation
+- Demo
