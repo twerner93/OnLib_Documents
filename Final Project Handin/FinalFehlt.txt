@@ -3,4 +3,3 @@ Es fehlt:
 - Ausleihen, Bearbeiten, InfoQuelle die FP Estimation --> Torsten
 - Test-Logs --> Torsten
 - DB Schema --> Torsten
-- Demo
